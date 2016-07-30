@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400);
 @import url(https://fonts.googleapis.com/css?family=Bubbler+One);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
 
 
 *{
@@ -10,14 +11,22 @@
 
 header {
 	text-align: center;
+    position: fixed;
+	background: rgba(37, 34, 34, 0.53);
+    width: 100%;
+    height: 50px;
+    padding: 11px;
 }
 
 h2 {
 	font-family: 'Lato', sans-serif;
-	font-size: 2.5em;
-	text-align: center;
-	margin: 50px;
-	font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+    width: 686px;
+    font-weight: 700;
+    color: #fcb040;
+    background-color: rgba(10, 11, 12, 0.49);
 }
 
 h3 {
@@ -32,6 +41,15 @@ h4 {
 	font-size: 2em;
 	text-align: center;
 	font-weight: 700;
+	padding: 20px;
+}
+
+h5 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+	font-weight: 700;
+	padding: 20px;
 }
 
 h6 {
@@ -39,6 +57,7 @@ h6 {
 	font-size: 1.7em;
 	text-align: center;
 	font-weight: 700;
+	padding: 20px;
 }
 
 li {
@@ -101,6 +120,8 @@ footer {
 
 .navlinks {
 	padding: 100px;
+	color: #fcb040;
+	font-family: 'Architects Daughter', cursive;
 }
 
 .fwords {
@@ -111,7 +132,7 @@ footer {
 }
 
 .section_body {
-	margin: 6%;
+	margin: 0;
 }
 
 .body_sections {
@@ -120,14 +141,48 @@ footer {
 	margin: 1%;
 }
 
+.clearfix:after{
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+}
+
 .italic {
 	font-style: italic;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    background: rgba(200, 208, 216, 0.67);
+    margin: 204px 133px 0 496px;
+    margin-right: -372px;
+    z-index: 1;
+}
+
+.limg {
+	margin-left: 330px;
+}
+
+.rwds {
+    float: right;
+    width: 50%;
+    background: rgba(200, 208, 216, 0.67);
+    margin: 122px 436px 0;
+    margin-left: -372px;
+    z-index: 1;
+}
+
+.right {
+/*	float: right;*/
 }
 
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 20%;
 }
 
 .line {
@@ -158,8 +213,28 @@ footer {
 }
 
 #logo {
-    margin-top: -1059px;
-    margin-bottom: 430px;
+	margin: -36% 0 5% 10%;
+}
+
+#smlrimg {
+	width: 36%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    z-index: -1;
+}
+
+#difference {
+	padding-top: 30px;
+}
+
+#about {
+	padding-top: 30px;
+}
+
+#contact {
+	padding-top: 30px;
 }
 
 #toggle {
@@ -187,6 +262,44 @@ footer {
 
 #smltext {
 	font-size: .9em;
+}
+
+#block1 {
+	display: inline-block;
+	float: left;
+    width: 33%;
+    height: 400px;
+/*    background: rgba(252, 176, 64, 0.66);*/
+ 	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #fcb040 , #D5DEDC); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #fcb040 , #D5DEDC); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #fcb040 , #D5DEDC); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, #fcb040 , #D5DEDC); /* Standard syntax */
+}
+
+#block2 {
+	display: inline-block;
+	float: left;
+/*    background: #00aeef;*/
+    width: 33%;
+    height: 400px;
+    background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #D5DEDC , #cfd5d4); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #D5DEDC , #cfd5d4); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #D5DEDC , #cfd5d4); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #D5DEDC , #cfd5d4); /* Standard syntax */
+}
+
+#block3 {
+	display: inline-block;
+    height: 400px;
+    width: 33%;
+/*    background: rgba(246, 42, 53, 0.63);*/
+    background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #cfd5d4 , #00aeef); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #cfd5d4 , #00aeef); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #cfd5d4 , #00aeef); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #cfd5d4 , #00aeef); /* Standard syntax */
 }
 
 #footer_copyright {
