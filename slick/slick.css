@@ -32,6 +32,11 @@
 {
     outline: none;
 }
+.slick-track,
+.slick-list {
+-webkit-perspective: 2000px;
+-webkit-backface-visibility: hidden;
+}
 .slick-list.dragging
 {
     cursor: pointer;
