@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Telos Child Care</title>
+	<meta charset="UTF-8">
 	<link rel="icon" href="images/icon.ico">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,30 +29,18 @@
 	    </div>
 	</header>
 
-	<div class="your-class">
-	  <div id="slide1"></div>
-	  <div id="slide2"></div>
-	  <div id="slide3"></div>
-	  <img id="logo" src="images/Jog-a-ThonLogowstars.png">
+	<div class="banner-container">
+		<div class="banner-slider">
+		  	<div id="slide1" class="slidecontent"><img src="images/paddleboard_group.jpg" style="visibility: hidden;"></div>
+		  	<div id="slide2" class="slidecontent"><img src="images/paddleboard_group.jpg" style="visibility: hidden;"></div>
+		  	<div id="slide3" class="slidecontent"><img src="images/paddleboard_group.jpg" style="visibility: hidden;"></div>
+		  	<div id="slide4" class="slidecontent"><img src="images/paddleboard_group.jpg" style="visibility: hidden;"></div>
+		</div>
 	</div>
-	<script type="text/javascript" src="slick/jquery-3.1.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
 
-	<script>
-		$(document).ready(function(){
-		  $('.your-class').slick({
-		    setting-name: setting-value
-		  });
-		});
-		$('.autoplay').slick({
-		  slidesToShow: 1,
-		  slidesToScroll: 1,
-		  autoplay: true,
-		  autoplaySpeed: 2000,
-		});
-	</script>	
+	<img id="logo" src="images/Jog-a-ThonLogowstars.png">
+
+
 	<div class="wrapper" id="difference">
 		<div class="clearfix">
 			<h2>Why Telos for your Child</h2>
@@ -223,5 +212,24 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery-migrate-1.4.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.banner-slider').slick({
+		  	autoplay: true,
+		  	autoplaySpeed: 3500,
+		  	infinite: true,
+		  	dots: true,
+		  	zIndex: -100,
+		  	pauseOnFocus: false,
+		  	mobileFirst: true
+		  });
+		});
+	</script>
+
 </body>
 </html>
