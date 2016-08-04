@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400);
 @import url(https://fonts.googleapis.com/css?family=Bubbler+One);
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(NexaRustSlab-BlackShadow03.otf)
 
 
 *{
@@ -20,14 +21,14 @@ header {
 }
 
 h2 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'NexaRustSlab-BlackShadow03', sans-serif;
     font-size: 2.5em;
     text-align: center;
     margin: 50px auto;
     width: 686px;
     font-weight: 700;
     color: #fcb040;
-    background-color: rgba(8, 175, 238, 0.31);
+    background-color: rgba(0, 171, 238, 0.78);
 }
 
 h3 {
@@ -245,11 +246,19 @@ footer td {
 	vertical-align: top;
 }
 
+.blockswrd1 p {
+	font-size: 1.5em;
+}
+
 .blockswrd3 {
 	width: 32%;
 	display: inline-block;
 	padding: 50px 0;
 	vertical-align: top;
+}
+
+.blockswrd3 p {
+	font-size: 1.5em;
 }
 
 .contact {
