@@ -93,6 +93,10 @@ a {
 	color: black;
 }
 
+a img {
+	width: 30px;
+}
+
 table {
 	margin: auto;
 }
@@ -304,6 +308,10 @@ footer td {
 	width: 100%;
 }
 
+#center {
+	text-align: center;
+}
+
 #logo {
 	margin: -36% 0 5% 10%;
 	z-index: 1;
@@ -339,15 +347,12 @@ footer td {
 	display: none;
 }
 
-<<<<<<< HEAD
 #buildbl {
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
 }
 
-=======
->>>>>>> origin/master
 .banner-container {
 	width: 100%;
 
