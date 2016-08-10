@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400);
 @import url(https://fonts.googleapis.com/css?family=Bubbler+One);
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
-@import url(NexaRustSlab-BlackShadow03.otf)
+
+@font-face {
+	font-family: NexaRustSlab;
+	src: url("NexaRustSlab-BlackShadow03.otf") format("opentype");
+}
 
 
 *{
@@ -30,21 +34,21 @@ header {
     position: fixed;
 	background: rgba(37, 34, 34, 0.53);
     width: 100%;
-    height: 30px;
+    height: 50px;
     padding: 11px;
     z-index: 1;
 }
 
 h2 {
-	font-family: 'NexaRustSlab-BlackShadow03', sans-serif;
-    font-size: 2.5em;
+	font-family: 'NexaRustSlab', sans-serif;
+    font-size: 3.5em;
     text-align: center;
     margin: 50px auto;
-    padding: 10px 0;
-    width: 686px;
+    padding: 20px 0;
+    width: 60%;
     font-weight: 700;
     color: #fcb040;
-    background-color: rgba(0, 171, 238, 0.78);
+    background-color: rgba(0, 171, 238, 1);
 }
 
 h3 {
@@ -55,19 +59,21 @@ h3 {
 }
 
 h4 {
-	font-family: 'Lato', sans-serif;
-	font-size: 2em;
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 2.5em;
 	text-align: center;
 	font-weight: 700;
 	padding: 20px;
+	color: #00aeef;
 }
 
 h5 {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.7em;
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 2.5em;
 	text-align: center;
 	font-weight: 700;
 	padding: 20px;
+	color: #fcb040;
 }
 
 h6 {
@@ -80,7 +86,7 @@ h6 {
 
 li {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	text-align: center;
 	margin: 25px;
 	font-weight: 700;
@@ -93,7 +99,7 @@ hr {
 
 p {
 	font-family: 'Bubbler One', sans-serif;
-	font-size: 1.7em;
+	font-size: 2em;
 	font-weight: 300;
 	line-height: 1.3em;
 	padding: 10px;
@@ -112,6 +118,8 @@ a {
 
 a img {
 	width: 30px;
+	vertical-align: middle;
+	margin: 5px;
 }
 
 table {
@@ -131,7 +139,7 @@ input {
 }
 
 td {
-	padding: 30px;
+	padding: 10px;
 }
 
 td img {
@@ -226,6 +234,13 @@ footer td {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
+
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ(0);
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .line {
@@ -244,7 +259,7 @@ footer td {
     font-size: 20px;
     float: left;
     width: 50%;
-    margin-top: 126px;
+    margin-top: 15px;
 }
 
 .contactsection p {
@@ -264,18 +279,18 @@ footer td {
 }
 
 .blockswrd1 p {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .blockswrd3 {
 	width: 32%;
 	display: inline-block;
-	padding: 50px 0;
+	padding: 10px 0;
 	vertical-align: top;
 }
 
 .blockswrd3 p {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .contact {
@@ -305,7 +320,7 @@ footer td {
 	background-color: rgba(255, 255, 255, 0.48);
     text-align: right;
     width: 90%;
-    padding: 120px 0;
+    padding: 80px 0;
     background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.48) , rgba(255, 255, 255, 0));
     background: -o-linear-gradient(right, #fcb040 , #D5DEDC);
     background: -moz-linear-gradient(right, #fcb040 , #D5DEDC);
@@ -313,7 +328,7 @@ footer td {
 }
 
 #relation h2 {
-	margin: 50px 100px;
+	margin: 0 100px 50px;
 }
 
 #relation p {
@@ -330,7 +345,9 @@ footer td {
 	float: right;
 	width: 50%;
 }
-
+#contactimg {
+	width: 100%;
+}
 
 #footer_section {
 	background-color: rgba(37, 34, 34, 0.53);
@@ -378,9 +395,18 @@ footer td {
 }
 
 #buildbl {
+	position: relative;
+	top: 0;
+	left: 0;
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
+}
+#buildbl_mobile {
+	display: none;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .banner-container {
@@ -401,19 +427,49 @@ footer td {
 	background-repeat: no-repeat;
 }
 #slide2 {
-	background: url("../images/paddleboard_jump.jpg");
+	background: url("../images/lyrictreehouse.jpg");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
 }
 #slide3 {
-	background: url("../images/paddleboard_group.jpg");
+	background: url("../images/waterpark.jpg");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
 }
 #slide4 {
 	background: url("../images/paddleboard_kids.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#slide5 {
+	background: url("../images/river.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#slide6 {
+	background: url("../images/paddleboard_jump.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#slide7 {
+	background: url("../images/ropeswing.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#slide8 {
+	background: url("../images/paddleboard_group.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#slide9 {
+	background: url("../images/slamdunk.jpg");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -429,6 +485,18 @@ footer td {
 
 #bwdtp {
 	margin: 28px;
+}
+
+
+#portrait {
+	display: inline-block;
+	width: 45%;
+}
+#bio {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	padding: 30px;
 }
 
 #block1 {
@@ -480,6 +548,7 @@ footer td {
 #footerinfo {
 	font-size: 8px;
 	display: inline-block;
+	margin-top: 45px;
 }
 
 #aclogo {
@@ -498,6 +567,9 @@ footer td {
 @media only screen and (max-width: 1800px) {
 	footer {
 		font-size: 18px;
+	}
+	.blocks {
+		margin-top: 185px;
 	}
 	.blockswrd3 {
 		padding: 0;
@@ -530,7 +602,29 @@ footer td {
 
 @media only screen and (max-width: 1500px) {
 	body {
-		font-size: 10px;
+		/*font-size: 10px;*/
+	}	
+	p {
+		line-height: 1.1em;
+		width: 100%;
+		padding: 6px;
+	}
+	#bwdtp {
+		margin: 0 5px;
+	}
+	#bwdbt {
+		margin: 0 5px 20px 5px;
+	}
+	.blocks {
+		margin-top: 90px;
+	}
+	#portrait {
+		margin: 0 auto;
+		width: 85%;
+	}
+	#bio {
+		margin: 0 auto;
+		width: 85%;
 	}
 	.navlinks {
 		padding: 50px;
@@ -565,7 +659,8 @@ footer td {
 
 @media only screen and (max-width: 1200px)	{
 	.blocks {
-		width: 60%;
+		width: 40%;
+		margin-top: 100px;
 	}
 	.blockswrd1 {
 		width: 65%;
@@ -573,8 +668,23 @@ footer td {
 		padding-top: 0;
 		margin: auto;
 	}
+	.blockswrd3 {
+		width: 50%;
+		margin-bottom: 60px;
+	}
 	.contactsection {
 		font-size: 12px;
+	}
+	#buildbl {
+		display: none;
+		width: 75%;
+		margin-left: 0;
+	}
+	#buildbl_mobile {
+		width: 85%;
+		margin-left: 0;
+		display: inline-block;
+		z-index: 1;
 	}
 }
 
@@ -593,11 +703,54 @@ footer td {
 		float:right;
 		padding: 15px;
 	}
+	header {
+		height: 47px;
+		padding: 0;
+	}
 	nav{
 		display: none;
 		position: static;
 		clear:both;
 		background-image: none;
+	}
+	h2 {
+		width: 95%;
+	}
+	p {
+		line-height: 1.3em;
+		padding: 2% 7.5%;
+	}
+	#main {
+		margin-top: 47px;
+	}
+	.navlinks {
+		display: block;
+		background: rgba(37, 34, 34, 0.53);
+		width: 100%; 
+	}
+	.container {
+		margin-top: 10px;
+	}
+	#smlrimg {
+		width: 90%;
+	}
+	.limg {
+		margin-left: 0;
+	}
+	.left {
+		float: none;
+		width: 90%;
+		margin: 1% 5%;
+	}
+	.right {
+		
+	}
+
+
+	.rwds {
+		float: none;
+		width: 90%;
+		margin: 1% 5%; 
 	}
 	.fwords {
 		margin-left: 0%;
@@ -607,26 +760,67 @@ footer td {
 	}
 	.blocks {
 		width: 100%;
+		margin-top: 40px;
+	}
+	.blockswrd1 {
+		width: 95%;
 	}
 	.blockswrd3 {
 	    display: block;
-	    width: 65%;
+	    width: 95%;
 	    margin: auto;
 } 
 	.mobile_toggle {
 		display: block;
 	}
+	#difference {
+		padding-top: 0;
+	}
 	#toggle:checked + .container nav {	
 		display: block;
 	}
-	#buildbl {
-		width: 50%;
-		margin-left: 24%;
+	#footerinfo {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h2 {
+		font-size: 1.5em;
+	}
+	.contactsection {
+		width: 100%;
+		display: block;
+	}
+	.contact {
+		display: none;
+	}
+	#relation {
+		width: 100%;
+	}
+	#relation h2 {
+		margin: 2% auto;
+	}
+	#relation p {
+		margin: 0;
 	}
 }
 
 @media only screen and (max-width: 450px)	{
 	.fwords {
 		font-size: .8em;
+	}
+	p {
+		line-height: 1.2em;
+	}
+	#bio {
+		width: 100%;
+		padding: 15px;
+	}
+	#contact {
+		margin: 2px auto;
+	}
+	.contactsection {
+		margin: 15px 0 30px 0;
 	}
 }
