@@ -309,6 +309,17 @@ footer td {
 	z-index: 999;
 }
 
+.reqsty {
+	font-family: 'Bubbler One', sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1.3em;
+	padding: 10px;
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #relationbkgd {
 	background: url(../images/relationships.jpg);
 	background-size: cover;
@@ -651,9 +662,18 @@ footer td {
 	}
 	.contact {
 		text-align: center;
-  		float: right;
-  	  	display: inline-block;
-  	  	width: 50%;
+  		float: none;
+  	  	display: block;
+  	  	width: 100%;
+	}
+	.contactsection {
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	#contacttable {
+		float: none;
+		width: 100%;
 	}
 }
 
